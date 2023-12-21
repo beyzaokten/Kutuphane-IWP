@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mWXcM0JtAaZECFvXXO25Z4Ls7sg4MN3+Rv/smK8ibnc2XJQyuSvS8PLqKZ26BQB0yys/xgoeJDEbSR42DJJ5eA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\_Monster_\\Desktop\\Kutuphane-IWP\\Kutuphane\\Kutuphane\\Kutuphane.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\_Monster_\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
