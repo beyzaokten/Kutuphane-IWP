@@ -4,17 +4,20 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
-// Middleware tanımlamaları
-app.use(express.urlencoded({ extended: true }));
-
 // Statik dosyaları servis etmek için
-const staticPath = path.join(__dirname, "..", "Views"); // ".." dizini bir üst dizini ifade eder
+const staticPath = path.join(__dirname, "..", "Views");
 app.use(express.static(staticPath));
 
-// Ana sayfa route'u
-app.get("/", (req, res) => {
-  const kayitEkraniPath = path.join(staticPath, "Home", "KayitEkrani.html");
-  res.sendFile(kayitEkraniPath);
+// Giriş Ekranı route'u
+app.get("/giris", (req, res) => {
+  const girisEkraniPath = path.join(staticPath, "GirisEkrani.html");
+  res.sendFile(girisEkraniPath);
+});
+
+// Ana Sayfa route'u
+app.get("/anasayfa", (req, res) => {
+  const anasayfaPath = path.join(staticPath, "Anasayfa.html");
+  res.sendFile(anasayfaPath);
 });
 
 // Dinleme
