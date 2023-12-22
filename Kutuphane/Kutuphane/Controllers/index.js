@@ -17,6 +17,12 @@ app.get("/", (req, res) => {
   res.sendFile(kayitEkraniPath);
 });
 
+// Giriş sayfası route'u
+app.get("/giris", (req, res) => {
+  const girisEkraniPath = path.join(__dirname, "..", "Views", "Home", "GirisEkrani.html");
+  res.sendFile(girisEkraniPath);
+});
+
 // Dinleme
 app.listen(port, () => {
   console.log(`Uygulama ${port} portunda çalışıyor`);
