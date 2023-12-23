@@ -81,6 +81,19 @@
     <a href="/anasayfa">Ana Sayfaya Git</a>
 
 
-    <a href="KayitEkranı.html" class="back-button">Geri Dön</a>
+    <a href="/" class="back-button">Geri Dön</a>
+</div>
+
+<script>
+    // JavaScript fonksiyonu: Sayfayı yönlendir
+    function redirectToAnasayfa() {
+        window.location.href = "/";
+    }
+
+    // Geri Dön butonuna tıklanınca redirectToAnasayfa() fonksiyonunu çağır
+    document.querySelector('.back-button').addEventListener('click', redirectToAnasayfa);
+</script>
+
+    
 </body>
 </html>
